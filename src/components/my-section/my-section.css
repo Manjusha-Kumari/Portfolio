@@ -1,0 +1,90 @@
+.hire__btn{
+    background: #fff;
+    color: #0e1b31;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: .9rem;
+    padding: 7px 25px;
+}
+
+.hire__btn a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hire__btn:hover a{
+    color: #0e1b31;
+}
+
+.contact__btn{
+    color: white;
+    background: #7865ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: .9rem;
+    padding: 7px 25px;
+}
+
+.contact__btn:hover{
+    color: #0e1b31;
+}
+
+.my__title span{
+    color: #7865ff;
+}
+
+.my__title{
+    font-weight: 600;
+}
+
+.my__img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background: #7865ff;
+    margin: auto;
+    padding: 0px;
+}
+
+.my__img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background: #7865ff;
+    margin: auto;
+}
+
+.welcome-text{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.my-section{
+    /* margin-top: 6rem; */
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content h5{
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.header-content h2{
+    color: #fff;
+}
+
+.my-section__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content p{
+    line-height: 30px;
+    font-weight: 300;
+}
