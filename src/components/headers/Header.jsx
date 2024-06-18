@@ -33,10 +33,22 @@ export const Header = () => {
     const headerRef = useRef(null);
 
     useEffect(() => {
+        const handleScroll = () => {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerRef.current.classList.add('header__shrink');
+            } else {
+                headerRef.current.classList.remove('header__shrink');
+            }
+        };
 
-    }, [])
+        window.addEventListener('scroll', handleScroll);
 
-    return <header className="header">
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return <header className="header" ref={headerRef}>
         <Container>
             <div className="navigation d-flex align-items-center justify-content-between">
                 <div className="logo">
