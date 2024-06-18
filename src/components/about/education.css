@@ -1,0 +1,31 @@
+.table {
+    border: 1px solid #132347;
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 100%;
+}
+
+th, td {
+    padding: 1.3rem 1rem !important;
+    font-size: 1rem;
+}
+
+thead {
+    background: #7865ff;
+    color: #fff;
+}
+
+tbody {
+    background: #102048; 
+    height: 200px;
+}
+
+td {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.table tbody tr {
+    background: #102048;
+}

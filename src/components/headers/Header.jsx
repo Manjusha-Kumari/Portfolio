@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import {Container} from 'reactstrap'
 import './header.css'
 
@@ -30,6 +30,12 @@ const navLinks = [
 ]
 
 export const Header = () => {
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+
+    }, [])
+
     return <header className="header">
         <Container>
             <div className="navigation d-flex align-items-center justify-content-between">

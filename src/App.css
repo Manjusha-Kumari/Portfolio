@@ -56,5 +56,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 section, footer{
-  padding: 60px 0px;
+  padding: 90px 0px;
+}
+
+
+/*================================custom scroll bar====================================================*/
+::-webkit-scrollbar{
+  width: 10px;
+  background: #c1ceff;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2em;
+  background: #282f4e;
 }
