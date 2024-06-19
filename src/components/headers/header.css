@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .nav__list{
@@ -61,3 +61,5 @@
     background: #132347;
     box-shadow: 2px 2px 4px -2px #7765ffbd;
 }
+
+

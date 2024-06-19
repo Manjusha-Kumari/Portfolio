@@ -14,13 +14,18 @@ const navLinks = [
     },
 
     {
-        display: 'Services',
-        url: '#services'
+        display: 'Courses',
+        url: '#courses'
     },
 
     {
-        display: 'Portfolio',
-        url: '#portfolio'
+        display: 'Experience',
+        url: '#experience'
+    },
+
+    {
+        display: 'Projects',
+        url: '#projects'
     },
 
     {
@@ -48,6 +53,24 @@ export const Header = () => {
         };
     }, []);
 
+    const handleClick = (e) => {
+        e.preventDefault();
+        const targetAttr = e.target.getAttribute('href');
+        const targetElement = document.querySelector(targetAttr);
+
+        if (targetElement) {
+            const headerHeight = headerRef.current.offsetHeight;
+            const location = targetElement.offsetTop - headerHeight;
+            window.scrollTo({
+                left: 0,
+                top: location,
+                behavior: 'smooth'
+            });
+        } else {
+            console.warn(`Element not found: ${targetAttr}`);
+        }
+    };
+    
     return <header className="header" ref={headerRef}>
         <Container>
             <div className="navigation d-flex align-items-center justify-content-between">
@@ -60,7 +83,7 @@ export const Header = () => {
                             {
                                 navLinks.map((item, index) => (
                                     <li className="nav__item" key={index}>
-                                        <a href={item.url}>{item.display}</a>
+                                        <a href={item.url} id={item.display} onClick={handleClick}>{item.display}</a>
                                     </li>
                                 ))
                             }

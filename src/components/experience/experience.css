@@ -1,0 +1,67 @@
+.single__experience-container{
+    padding: 20px;
+    background: #132347;
+    border-radius: 10px;
+    border-bottom: 1px solid #7865ff;
+}
+
+.single__experience{
+    position: relative;
+    padding: 20px 30px;
+    z-index: 79;
+}
+
+.single__experience::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background: #7865ff;
+    color: #7865ff;
+    z-index: 80;
+}
+
+.experience__col{
+    margin-bottom: 15px;
+}
+
+.experience__col h2{
+    color: #fff;
+}
+
+.single__experience h4{
+    color: #fff !important;
+}
+
+.single__experience h5{
+    color: #fff !important;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.single__experience h6 {
+    color: #fff !important;
+    font-size: .8rem;
+    opacity: 75%;
+    font-weight: 300;
+}
+
+.single__experience p{
+    color: #fff !important;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 8.9rem;
+}
+
+.experience__icon{
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    color: #7865ff;
+    font-size: 1.2rem;
+    z-index: 80;
+}
+
+

@@ -1,0 +1,38 @@
+.single__courses{
+    background: #132347;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #7865ff;
+}
+
+.single__courses h2{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.single__courses p{
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.course__icon{
+    color: #7865ff;
+    font-size: 2.2rem;
+}
+
+.courses__top h6{
+    color: #7865ff;
+    margin-bottom: 15px;
+}
+
+.courses__top h2{
+    color: #fff;
+}
+
+.single__courses:hover{
+    transform: translateY(-15px)
+}
