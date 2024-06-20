@@ -51,7 +51,7 @@ const MySection = () => {
                 mytechnical skills in a collaborative team environment.
                 </p>
               </div>
-              <div className="mt-5 my__btns d-flex align-items-center gap-4">
+              <div className="my__btns mt-5 d-flex align-items-center gap-4">
                 <button className="hire__btn">
                   <a href="#">Hire Me</a>
                 </button>

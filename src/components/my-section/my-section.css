@@ -88,3 +88,39 @@
     line-height: 30px;
     font-weight: 300;
 }
+
+
+
+/*=================================== responsive ====================================== */
+@media only screen and (max-width: 992px) {
+    .my__img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .my__container p{
+        font-size: 0.8rem;
+    }
+
+    .my__btns button {
+        display: block;
+        padding: 5px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 766px){
+    .my__img{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .my__container{
+        margin-bottom: 50px;
+    }
+
+    .my__title{
+        font-size: 1.5rem;
+    }
+}

@@ -21,3 +21,19 @@
 .in_touch h2{
     color: #fff;
 }
+
+@media only screen and (max-width: 992px) {
+    .single__info h6{
+        font-size: 0.8rem;
+    }
+
+    .single__info p{
+        font-size: 0.7rem;
+    }
+
+    .single__info{
+        margin-bottom: 20px;
+    }
+}
+
+
