@@ -5,6 +5,8 @@ import About from '../about/About'
 import Courses from '../courses/Courses'
 import Experience from '../experience/Experience'
 import Project from '../projects/Project'
+import Contact from '../contact/Contact'
+import Footer from '../footer/Footer'
 
 export const Layout = () => {
     return <Fragment>
@@ -30,7 +32,11 @@ export const Layout = () => {
             </div>
 
             <div id="contact">
-                {/* Your Contact component */}
+                <Contact/>
+            </div>
+
+            <div id="footer">
+                <Footer/>
             </div>
     </Fragment>
 }

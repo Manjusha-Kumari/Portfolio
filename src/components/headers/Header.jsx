@@ -37,6 +37,8 @@ const navLinks = [
 export const Header = () => {
     const headerRef = useRef(null);
 
+    const menuRef = useRef(null);
+
     useEffect(() => {
         const handleScroll = () => {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -70,6 +72,9 @@ export const Header = () => {
             console.warn(`Element not found: ${targetAttr}`);
         }
     };
+
+    const menuToggle = () => menuRef.current.classList.toggle('menu__active')
+    
     
     return <header className="header" ref={headerRef}>
         <Container>
@@ -78,7 +83,7 @@ export const Header = () => {
                     <h5>Manjusha</h5>
                 </div>
 
-                <div className="nav__menu">
+                <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
                     <ul className="nav__list">
                             {
                                 navLinks.map((item, index) => (
@@ -94,8 +99,8 @@ export const Header = () => {
                     <button className="btn">
                         Let's Talk
                     </button>
-                    <span className="mobile__menu">
-                        <i class="ri-menu-fill"></i>
+                    <span className="mobile__menu" >
+                        <i class="ri-menu-fill" onClick={menuToggle}></i>
                     </span>
                 </div>
             </div>
