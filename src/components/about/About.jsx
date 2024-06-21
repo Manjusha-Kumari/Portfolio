@@ -41,8 +41,8 @@ const About = () => {
                                 <div className="social__links">
                                     <h6 className='mb-3'>Connect with me:</h6>
                                         <span>
-                                            <a href="#"><i class="ri-github-fill"></i></a>
-                                            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                                            <a href="https://github.com/Manjusha-Kumari"><i class="ri-github-fill"></i></a>
+                                            <a href="https://www.linkedin.com/in/manjusha-kumari-94636227a/"><i class="ri-linkedin-box-fill"></i></a>
                                         </span>
                                 </div>
                             </div>

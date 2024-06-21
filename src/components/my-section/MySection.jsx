@@ -53,7 +53,7 @@ const MySection = () => {
               </div>
               <div className="my__btns mt-5 d-flex align-items-center gap-4">
                 <button className="hire__btn">
-                  <a href="#">Hire Me</a>
+                  <a href="https://www.linkedin.com/in/manjusha-kumari-94636227a/">Hire Me</a>
                 </button>
                 <button className="contact__btn">Contact</button>
               </div>
