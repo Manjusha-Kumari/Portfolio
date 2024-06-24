@@ -1,9 +1,8 @@
-// backend/server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-require('dotenv').config();
+require('dotenv').config({ path: '.env.local' });
 
 const app = express();
 const PORT = 5000;
@@ -13,6 +12,11 @@ app.use(bodyParser.json());
 
 // MongoDB connection string
 const uri = process.env.MONGODB_URI;
+
+if (!uri) {
+    console.error('MONGODB_URI is not defined. Check your .env.local file.');
+    process.exit(1);
+}
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
